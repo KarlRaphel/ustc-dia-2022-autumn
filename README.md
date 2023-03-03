@@ -30,9 +30,9 @@
 
 ## 5. 数字弦、紧致弦的判定方法
 
-数字弧：$p\rightarrow q$ 连续
-数字弧：$d_8(\rho,p_k)<1$
-紧致数字弧：$d_4(\rho,p_k)<1$
+数字弧： $p\rightarrow q$  连续
+数字弧： $d_8(\rho,p_k)<1$ 
+紧致数字弧： $d_4(\rho,p_k)<1$ 
 
 ## 6. 2D距离变换
 
@@ -91,7 +91,7 @@ KL变换是建立在统计特性基础上的一种变换
 ## 2. 空域灰度变换
 
 - 基本灰度变换
-  灰度映射$s=T(r)$ <img title="" src="assets/2023-03-01-20-05-36-image.png" alt="" width="208" data-align="center">
+  灰度映射 $s=T(r)$  <img title="" src="assets/2023-03-01-20-05-36-image.png" alt="" width="208" data-align="center">
 
 - 直方图处理（直方图均衡、直方图匹配、局部直方图处理）
 
@@ -350,16 +350,16 @@ GIST（Gabor滤波器：正弦平面波叠加高斯函数）
 ## 3. 条件随机场
 
 - 线性链条件随机场的定义与形式
-  给定随机变量$X$条件下，随机变量$Y$的马尔可夫随机场
+  给定随机变量 $X$ 条件下，随机变量 $Y$ 的马尔可夫随机场
 
 - 概率计算 *P876*
-  $$
-  P(Y_i=y_i|x)=\dfrac{\alpha_i^T(y_i|x)\beta_i(y_i|x)}{Z(x)}
-  \\
-  P(Y_{i-1}=y_{i-1},Y_i=y_i|x)=\dfrac{\alpha_{i-1}^T(y_{i-1}|x)M_i(y_{i-1},y_i)\beta_i(y_i|x)}{Z(x)}
-  \\
-  {Z(x)=\alpha_n^T(x)\textbf{1}}
-  $$
+$$
+P(Y_i=y_i|x)=\dfrac{\alpha_i^T(y_i|x)\beta_i(y_i|x)}{Z(x)}
+\\
+P(Y_{i-1}=y_{i-1},Y_i=y_i|x)=\dfrac{\alpha_{i-1}^T(y_{i-1}|x)M_i(y_{i-1},y_i)\beta_i(y_i|x)}{Z(x)}
+\\
+{Z(x)=\alpha_n^T(x)\textbf{1}}
+$$
 
 - 预测算法：维特比算法
   假设求A-E的最大概率；先求A-B的所有概率；对每个C求A-C的最大概率，抛弃不是最大值的B；接着对每个D求A-D的最大概率，抛弃不是最大值的C；最后求到E的最大概率。
